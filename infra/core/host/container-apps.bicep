@@ -67,9 +67,21 @@ module containerRegistry 'br/public:avm/res/container-registry/registry:0.3.1' =
     name: containerRegistryName
     location: location
     acrAdminUserEnabled: containerRegistryAdminUserEnabled
+    acrSku: 'Premium'
+    exportPolicyStatus: 'enabled' // Nodig om public network access in te kunnen schakelen
+    publicNetworkAccess: 'Enabled' // Schakel publieke toegang in of uit
+    networkRuleSetDefaultAction: 'Deny' // Blokkeer alle toegang, tenzij specifiek toegestaan
+    // Specificeer de toegestane IP-adressen
+    networkRuleSetIpRules: [
+      {
+        action: 'Allow'
+        value: '77.160.9.240'
+        }
+      ]
+    }
     tags: tags
-  }
-}
+    }
+
 
 output defaultDomain string = containerAppsEnvironment.outputs.defaultDomain
 output environmentName string = containerAppsEnvironment.outputs.name

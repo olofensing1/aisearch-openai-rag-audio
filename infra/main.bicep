@@ -18,6 +18,7 @@ param environmentName string
   'westus2'
   'westcentralus'
   'northeurope'
+  'westeurope'
   'francecentral'
   'switzerlandnorth'
   'switzerlandwest'
@@ -76,7 +77,6 @@ param openAiRealtimeDeployment string = ''
 
 @description('Location for the OpenAI resource group')
 @allowed([
-  'eastus2'
   'swedencentral'
 ])
 @metadata({
@@ -96,7 +96,12 @@ param principalId string = ''
 
 var abbrs = loadJsonContent('abbreviations.json')
 var resourceToken = toLower(uniqueString(subscription().id, environmentName, location))
-var tags = { 'azd-env-name': environmentName }
+var tags = union({
+  'azd-env-name': environmentName
+}, {
+  'kostenplaats': '463'
+  'omgeving': 'Ontwikkel'
+})
 
 @description('Whether the deployment is running on GitHub Actions')
 param runningOnGh string = ''

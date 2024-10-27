@@ -110,7 +110,7 @@
   "privateLink": "pl-",
   "purviewAccounts": "pview-",
   "recoveryServicesVaults": "rsv-",
-  "resourcesResourceGroups": "rg-",
+  "resourcesResourceGroups": "",
   "searchSearchServices": "srch-",
   "serviceBusNamespaces": "sb-",
   "serviceBusNamespacesQueues": "sbq-",
