@@ -73,12 +73,12 @@ module containerRegistry 'br/public:avm/res/container-registry/registry:0.3.1' =
     networkRuleSetDefaultAction: 'Deny' // Blokkeer alle toegang, tenzij specifiek toegestaan
     // Specificeer de toegestane IP-adressen
     networkRuleSetIpRules: [
-      {
-        action: 'Allow'
-        value: '77.160.9.240'
-        }
-      ]
-    }
+       {
+         action: 'Allow'
+         value: '77.160.9.240'
+         }
+       ]
+     }
     //tags: tags
     }
 
