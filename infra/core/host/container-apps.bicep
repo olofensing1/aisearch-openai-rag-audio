@@ -75,8 +75,200 @@ module containerRegistry 'br/public:avm/res/container-registry/registry:0.3.1' =
     networkRuleSetIpRules: [
        {
          action: 'Allow'
-         value: '77.160.9.240'
-         }
+         value: '77.160.9.240'}
+          {
+            action: 'Allow'
+            value: '62.59.40.1/32' // rdw ip
+          }
+          {
+            action: 'Allow'
+            value: '4.231.160.36/32' // container app env
+          }
+          {
+            action: 'Allow'
+            value: '4.175.195.54/32' // container app env
+          }
+                    // Azure IPs
+          {
+            action: 'Allow'
+            value: '4.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '9.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '13.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '20.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '23.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '40.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '48.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '50.85.0.0/16'
+          }
+          {
+            action: 'Allow'
+            value: '51.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '52.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '57.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '64.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '65.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '68.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '70.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '72.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '74.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '85.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '94.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '98.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '102.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '103.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '104.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '108.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '111.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '131.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '132.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '134.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '135.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '137.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '138.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '151.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '157.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '158.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '167.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '168.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '172.205.0.0/16'
+          }
+          {
+            action: 'Allow'
+            value: '191.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '193.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '199.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '202.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '204.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '207.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '209.0.0.0/8'
+          }
+          {
+            action: 'Allow'
+            value: '213.0.0.0/8'
+          }
        ]
      }
     //tags: tags
