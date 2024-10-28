@@ -75,18 +75,18 @@ module containerRegistry 'br/public:avm/res/container-registry/registry:0.3.1' =
     networkRuleSetIpRules: [
        {
          action: 'Allow'
-         value: '77.160.9.240'}
+         value: 'xx.xx.xx.xx'}
           {
             action: 'Allow'
-            value: '62.59.40.1/32' // rdw ip
+            value: 'xx.xx.xx.xx/xx' // rdw ip
           }
           {
             action: 'Allow'
-            value: '4.231.160.36/32' // container app env
+            value: 'xx.xx.xx.xx/xx' // container app env
           }
           {
             action: 'Allow'
-            value: '4.175.195.54/32' // container app env
+            value: 'xx.xx.xx.xx/xx' // container app env
           }
                     // Azure IPs
           {
