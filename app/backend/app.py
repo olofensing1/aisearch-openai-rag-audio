@@ -44,7 +44,7 @@ async def create_app():
                           "Make sure you answer in short summarized answers." + \
                           "To ground your answer, make sure everything in your answer is in the sources and also answers the question." + \
                           "ALWAYS answer in Dutch." + \
-                          "When you cannot find any information in the sources provided, just answer that you cannot find information and don't try to make an answer. " + \                     
+                          "When you cannot find any information in the sources provided, just answer that you cannot find information and don't try to make an answer. " + \
                           "Never read file names or source names or keys or urls out loud. " + \
                           "Always use the following step-by-step instructions to respond: \n" + \
                           "1. Always use the 'search' tool to check the knowledge base before answering a question. \n" + \
