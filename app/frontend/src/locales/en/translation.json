@@ -1,21 +1,21 @@
 {
     "app": {
-        "title": "Talk to your data",
-        "footer": "Built with Azure AI Search + Azure OpenAI",
-        "stopRecording": "Stop recording",
-        "startRecording": "Start recording",
-        "stopConversation": "Stop conversation"
+        "title": "Praat met het personeelshandboek en CAO van de RDW",
+        "footer": "Voor experimenteer doeleinden",
+        "stopRecording": "Stop opname",
+        "startRecording": "Start opname",
+        "stopConversation": "Stop gesprek"
     },
     "status": {
-        "notRecordingMessage": "Ask anything about Contoso employee benefits",
-        "conversationInProgress": "Conversation in progress"
+        "notRecordingMessage": "Vraag alles over het RDW personeelshandboek en de RDW CAO",
+        "conversationInProgress": "Gesprek is gaande"
     },
     "history": {
         "answerHistory": "Answer history",
         "noHistory": "No history yet."
     },
     "groundingFiles": {
-        "title": "Grounding files",
-        "description": "Files used to ground the answers."
+        "title": "Brondbestanden",
+        "description": "Bestanden gebruikt om het antwoord te geven."
     }
 }
