@@ -135,14 +135,14 @@ resource app 'Microsoft.App/containerApps@2023-05-02-preview' = {
         corsPolicy: {
           allowedOrigins: union([ 'https://portal.azure.com', 'https://ms.portal.azure.com' ], allowedOrigins)
         }
-      // ipSecurityRestrictions: [   // Restrictie op Ingres verkeer tot eigen IP, Container App Environment
-      //     {
-      //       name: 'AllowSpecificIP'
-      //       ipAddressRange: 'xx.xx.xx.xx' // Vervang door je specifieke IP-adres
-      //       action: 'Allow'
-      //     }
-      //   ]
-      //   allowInsecure: false
+      ipSecurityRestrictions: [   // Restrictie op Ingres verkeer tot eigen IP, Container App Environment
+           {
+             name: 'AllowSpecificIP'
+             ipAddressRange: '77.160.9.240' // Vervang door je specifieke IP-adres
+             action: 'Allow'
+           }
+         ]
+         allowInsecure: false
       } : null
       dapr: daprEnabled ? {
         enabled: true
